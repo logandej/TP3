@@ -117,7 +117,7 @@ de calculer la moyenne des notes de l'étudiant. Pensez à ajouter des tests uni
    * dans l'onglet _Testing library_ vous choisirez l'option _JUnit 5_ 
    * donnez un nom approprié à votre classe de tests unitaires (par ex. `EtudiantTest`) et cliquez sur _Ok_.
    
-  Comme pour le TP précédent, la classe de tests générée sera automatiquement placée dans le même package que la classe
+     Comme pour le TP précédent, la classe de tests générée sera automatiquement placée dans le même package que la classe
   testée et dans le répertoire correspondant aux tests. Pour écrire vos tests, vous pouvez vous inspirer des exemples vues dans le TP précédent.
 
 5. Vérifiez que votre programme fonctionne bien dans la classe principale.
