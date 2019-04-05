@@ -22,7 +22,6 @@ Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'es
 
 On se propose ici de réaliser une application de gestion des étudiants dans un département informatique d'un IUT. 
 L'objectif est de développer l'application de manière incrémentale en ajoutant les fonctionnalités demandées au fur et à mesure.
-<!-- Le travail en mode TDD (développement piloté par des tests) pourrait vous être utile.-->
 
 Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE pour réaliser les tâches courantes (renommage d'attributs/méthodes, génération des différentes méthodes : constructeurs, setters, getters, etc.).
 
@@ -41,7 +40,7 @@ https://classroom.github.com/a/FY0Qks_1
 - A priori, la plupart des méthodes devraient être déclarées publiques (`public`). Vous pouvez tout de même déclarer et utiliser des méthodes `private` du moment qu'elles vous sont utiles et que votre programme fonctionne correctement.
 - Pensez à respecter les conventions de nommage *Java* (vues en [cours](http://pageperso.lif.univ-mrs.fr/~petru.valicov/Cours/M2103/BPOO_Generalites_x4.pdf) ou disponibles sur le site d'Oracle)
 
-# Exercice 1
+### Exercice 1
 
 1. Créez et implémentez la classe `Etudiant` avec les attributs suivants : nom, prénom, date de naissance, adresse mail,
  adresse postale. Pour représenter les dates vous pouvez utiliser la classe statique `LocalDate` du package `java.time`.
@@ -92,7 +91,7 @@ https://classroom.github.com/a/FY0Qks_1
 
 1. Vérifiez le bon fonctionnement de votre application dans la classe principale en créant un département `monDepInfo` et en y inscrivant quatre étudiants (dont `toto` et `lolo` définis précédemment). Désinscrivez ensuite `toto` du département. Que constatez-vous ?
 
-# Exercice 2
+### Exercice 2
 
 **Rappel :** Pour préserver le code écrit dans l'exercice précédent copiez l'ensemble des classes du package
 `fr.umontpellier.iut.exo1` dans le package `fr.umontpellier.iut.exo2` en utilisant les outils de *refactoring* de l'IDE.
