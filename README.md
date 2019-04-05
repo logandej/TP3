@@ -123,7 +123,7 @@ de calculer la moyenne des notes de l'étudiant. Pensez à ajouter des tests uni
 
 6. Construisez le diagramme de classes correspondant au programme *Java* que vous avez écrit. Vous pouvez le faire sur papier ou en utilisant un logiciel de modélisation.
 
-# Exercice 3 (Bonus)
+### Exercice 3 (Bonus)
 
 Observez que la classe `Etudiant` a un constructeur avec 4 paramètres. Bien entendu, le nombre de paramètres risque
 de croître car beaucoup d'autres attributs sont susceptibles d'être ajoutés à la classe `Etudiant`.
