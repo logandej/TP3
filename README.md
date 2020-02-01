@@ -18,7 +18,7 @@ Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'es
 * Pour éviter des problèmes durant vos TPs d'informatique, vous devriez toujours **garder 300-400 Mo d'espace libre**.
 
 
-## TP 3 : *Java* - références, constructeurs, première application orientée objets
+## TP 3 : *Java* - références, constructeurs, première application orientée objet
 
 On se propose ici de réaliser une application de gestion des étudiants dans un département informatique d'un IUT. 
 L'objectif est de développer l'application de manière incrémentale en ajoutant les fonctionnalités demandées au fur et à mesure.
@@ -115,10 +115,15 @@ de calculer la moyenne des notes de l'étudiant. Pensez à ajouter des tests uni
    * dans l'onglet _Testing library_ vous choisirez l'option _JUnit 5_ 
    * donnez un nom approprié à votre classe de tests unitaires (par ex. `EtudiantTest`) et cliquez sur _Ok_.
    
-     Comme pour le TP précédent, la classe de tests générée sera automatiquement placée dans le même package que la classe
-  testée et dans le répertoire correspondant aux tests. Pour écrire vos tests, vous pouvez vous inspirer des exemples vues dans le TP précédent.
+   * Comme pour le TP précédent, la classe de tests générée sera automatiquement placée dans le même package que la classe
+  testée et dans le répertoire correspondant aux tests. Pour écrire vos tests, vous pouvez vous inspirer des exemples vues dans le TP précédent. Vous devez ajouter au moins les tests suivants :
+  
+     `test_calculer_moyenne_retourne_0_Quand_Pas_De_Note()`
+     `test_calculer_moyenne_retourne_valeur_note_quand_une_seule_note()`
+     `test_calculer_moyenne_retourne_valeur_note_pondérée_quand_une_seule_note_avec_coefficient()`
+     `test_calculer_moyenne_retourne_moyenne_quand_plusieurs_notes_avec_differents_coefficients()`
 
-5. Vérifiez que votre programme fonctionne bien dans la classe principale.
+5. Vérifiez que votre programme fonctionne bien en l'exécutant depuis dans la classe principale.
 
 6. Construisez le diagramme de classes correspondant au programme *Java* que vous avez écrit. Vous pouvez le faire sur papier ou en utilisant un logiciel de modélisation.
 
