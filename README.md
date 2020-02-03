@@ -65,7 +65,7 @@ https://classroom.github.com/a/v3DaMjmp
 
     **Attention :** cette méthode n’affiche rien, elle se contente de produire une chaîne de caractères. Ce à quoi sert ce texte (par ex. à être affiché à l’écran, ou être écrit dans un fichier) dépend de l’utilisation de la méthode.
 
-1. Ajoutez une fonction `setNom(...)` qui permet de changer le nom et le prénom d'un objet de type `Etudiant`.
+1. Ajoutez une fonction `setNom(...)` qui permet de changer le nom d'un objet de type `Etudiant`.
 
 1. Vérifiez votre solution dans le programme principal (la classe `GestionEtudiants`) en instanciant dans la méthode `main(...)` une variable `lolo` de type `Etudiant` et en affichant ses informations.
     
@@ -107,7 +107,7 @@ avec un constructeur adéquat. Ajoutez dans `Matiere` une méthode accesseur `ge
 1. Ajoutez à la classe `Etudiant` un attribut correspondant à la liste de ses notes et une méthode `noter(...)` qui prend en paramètre une matière et une valeur réelle, crée un objet de type `Note` et l'ajoute à la liste des notes de l'étudiant.
 
 1. Sans toucher au code des autres classes, ajoutez à la classe `Etudiant` une méthode `calculerMoyenne()` qui permet
-de calculer la moyenne des notes de l'étudiant. Pensez à ajouter des tests unitaires pour vérifier le bon fonctionnement
+de calculer la moyenne pondérée des notes de l'étudiant. Pensez à ajouter des tests unitaires pour vérifier le bon fonctionnement
  de cette fonction. Pour créer une classe de tests unitaires, placez-vous dans la classe que vous souhaitez tester et :
     * appuyez sur <kbd>Alt</kbd>+<kbd>Insert</kbd> (ou bien faites un clic droit sur le nom de la classe &rightarrow;
   _Generate_)
