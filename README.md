@@ -122,6 +122,10 @@ de calculer la moyenne pondérée des notes de l'étudiant. Pensez à ajouter de
      `test_calculer_moyenne_retourne_valeur_note_quand_une_seule_note()`
      `test_calculer_moyenne_retourne_valeur_note_pondérée_quand_une_seule_note_avec_coefficient()`
      `test_calculer_moyenne_retourne_moyenne_quand_plusieurs_notes_avec_differents_coefficients()`
+     
+     **Indication :** Il est assez difficile de comparer des nombres réels car dans presque tous les langages de programmation ils sont représentés en virgule flottante et par conséquent, ils sont _approximés_ (plus de documentation pour Java sur le [site d'Oracle](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.2.3)). Une façon simple de comparer des réels et de les comparer à un epsilon près :
+     
+     `assertEquals(double expected, double actual, double delta)`     
 
 5. Vérifiez que votre programme fonctionne bien en l'exécutant depuis dans la classe principale.
 
