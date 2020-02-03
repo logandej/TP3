@@ -133,14 +133,14 @@ de calculer la moyenne pondérée des notes de l'étudiant. Pensez à ajouter de
 
 ### Exercice 3 (Bonus)
 
-Observez que la classe `Etudiant` a un constructeur avec 4 paramètres. Bien entendu, le nombre de paramètres risque
+Observez que la classe `Etudiant` a un constructeur avec 5 paramètres. Bien entendu, le nombre de paramètres risque
 de croître car beaucoup d'autres attributs sont susceptibles d'être ajoutés à la classe `Etudiant`.
 Observez aussi que lorsqu'on construit une instance d'`Etudiant` il est facile de se tromper dans l'ordre des paramètres
-du constructeur. Heureusement que l'IDE vous aide en vous  suggérant cette ordre lorsque vous programmez...
+du constructeur. Heureusement que l'IDE vous aide en vous suggérant cette ordre lorsque vous programmez...
 De plus, les valeurs de certains attributs peuvent être inconnues au moment de la construction de l'objet : l'adresse de l'étudiant n'est pas encore connue car l'attribution des logements universitaires par les organismes correspondants n'a pas encore eu lieu; l'adresse mail étudiante n'est pas encore active au moment de l'inscription de l'étudiant, etc. Plusieurs solutions peuvent être envisagées :
 
-1. Une solution est de définir plusieurs constructeurs avec différents paramètres et de les faire collaborer (voir exemples en [cours](http://pageperso.lif.univ-mrs.fr/~petru.valicov/Cours/M2103/BPOO_Generalites_x4.pdf)).
-Ainsi l'utilisateur pourra choisir le constructeur qui lui convient. C’est ce qu’on appelle une *construction télescopique*.
+1. Une solution est de définir plusieurs constructeurs avec différents paramètres et de les faire collaborer (voir exemples en [cours](http://pageperso.lis-lab.fr/~petru.valicov/Cours/M2103/BPOO_Generalites_x4.pdf)).
+Ainsi, l'utilisateur pourra choisir le constructeur qui lui convient. C’est ce qu’on appelle une *construction télescopique*.
 
     Créez une nouvelle classe `EtudiantTelescopique` (en copiant les attributs de la classe `Etudiant` de l'exercice 2) et modifiez-la afin de pouvoir instancier les étudiants de différentes manières :
     - en indiquant uniquement le nom et le prénom
