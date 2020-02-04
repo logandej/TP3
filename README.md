@@ -127,7 +127,7 @@ de calculer la moyenne pondérée des notes de l'étudiant. Pensez à ajouter de
      
      `assertEquals(double expected, double actual, double delta)`     
 
-5. Vérifiez que votre programme fonctionne bien en l'exécutant depuis dans la classe principale.
+5. Vérifiez que votre programme fonctionne bien en l'exécutant depuis la classe principale.
 
 6. Construisez le diagramme de classes correspondant au programme *Java* que vous avez écrit. Vous pouvez le faire sur papier ou en utilisant un logiciel de modélisation.
 
