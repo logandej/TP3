@@ -1,14 +1,16 @@
-# ![](ressources/logo.jpeg) Bases de la programmation orientée objet 
+# ![](ressources/logo.jpeg)
+
+# Bases de la programmation orientée objet
 
 ### IUT Montpellier-Sète – Département Informatique
 
 * **Cours:** [M2103](http://cache.media.enseignementsup-recherche.gouv.fr/file/25/09/7/PPN_INFORMATIQUE_256097.pdf) - support [ici](https://github.com/IUTInfoMontp-M2103/Ressources)
-* **Enseignants:** [Marin Bougeret](mailto:marin.bougeret@umontpellier.fr), [Sébastien Gagné](mailto:sebastien.gagne@umontpellier.fr), [Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr), [Jérôme Palaysi](mailto:jerome.palaysi@umontpellier.fr), [Victor Poupet](mailto:victor.poupet@umontpellier.fr), [Petru Valicov](mailto:petru.valicov@umontpellier.fr)
-* Le [forum Piazza](https://piazza.com/class/k52c8w685w3210) de ce cours pour poser vos questions
+* **Enseignants:** [Marin Bougeret](mailto:marin.bougeret@umontpellier.fr), [Romain Lebreton](mailto:romain.lebreton@umontpellier.fr), [Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr), [Victor Poupet](mailto:victor.poupet@umontpellier.fr), [Petru Valicov](mailto:petru.valicov@umontpellier.fr)
+* Le [forum Piazza](https://piazza.com/class/kjifrxy1n0i3xa) de ce cours pour poser vos questions
 * [Email](mailto:petru.valicov@umontpellier.fr) pour une question d'ordre privée concernant le cours.
 * Le [sujet du TP](http://pageperso.lis-lab.fr/~petru.valicov/Cours/M2103/TP3.pdf) en format .pdf téléchargeable et imprimable.
 
-Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'espace de stockage autorisé :
+<!--Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'espace de stockage autorisé :
 
 * placez-vous dans votre `$HOME` et utilisez les commandes suivantes :
     * `du -sh` pour voir combien d'espace vous avez déjà utilisé
@@ -16,7 +18,7 @@ Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'es
     * `du -sch .[!.]* *` pour voir combien d'espace vous avez déjà utilisé pour chaque fichier, y compris les fichiers cachés
 * Supprimez les fichiers inutiles.
 * Pour éviter des problèmes durant vos TPs d'informatique, vous devriez toujours **garder 300-400 Mo d'espace libre**.
-
+-->
 
 ## TP 3 : *Java* - références, constructeurs, première application orientée objet
 
@@ -33,7 +35,7 @@ votre travail pour chaque exercice et vous permettra également de mieux _révis
 
 Cliquez sur le lien ci-dessous pour faire votre fork privé du TP :
 
-https://classroom.github.com/a/v3DaMjmp
+https://classroom.github.com/a/IOu1E57Y
 
 ### Consignes
 - Sauf indication contraire, **tous** les attributs que vous allez déclarer dans ce TP (et dans les TPs qui suivent) doivent être privés (`private`).
@@ -42,14 +44,14 @@ https://classroom.github.com/a/v3DaMjmp
 ### Exercice 1
 
 1. Créez et implémentez la classe `Etudiant` avec les attributs suivants : nom, prénom, date de naissance, adresse mail,
- adresse postale. Pour représenter les dates vous pouvez utiliser la classe statique `LocalDate` du package `java.time`.
- Voici un exemple de création d'une date en Java :
- 
+   adresse postale. Pour représenter les dates vous pouvez utiliser la classe statique `LocalDate` du package `java.time`.
+   Voici un exemple de création d'une date en Java :
+
     ```java
     import java.time.LocalDate;
  
     class GestionEtudiants {
-        public static void main(String args[]) {
+        public static void main(String[] args) {
             LocalDate maDate = LocalDate.of(2019, Month.FEBRUARY, 4);
         }
     }
@@ -155,7 +157,7 @@ Ainsi, l'utilisateur pourra choisir le constructeur qui lui convient. C’est ce
 
     ```java
     class GestionEtudiants {
-        public static void main(String args[]) {
+        public static void main(String[] args) {
             EtudiantJavaBeans toto = new EtudiantJavaBeans();
             toto.setNom("Dupont");
             toto.setDateDeNaissance(LocalDate.of(2000, Month.JANUARY, 28));
@@ -168,10 +170,10 @@ Ainsi, l'utilisateur pourra choisir le constructeur qui lui convient. C’est ce
 1. Comparez cette solution avec celle de la classe `EtudiantTelescopique`. Quels sont les avantages et les inconvénients ?
 
 1. Finalement, on vous demande de développer une solution en combinant les bonnes idées des deux versions précédentes. Voici comment on voudrait pouvoir créer des étudiants dans la classe principale :
-    
+
     ```java
     class GestionEtudiants {
-        public static void main(String args[]) {
+        public static void main(String[] args) {
             Etudiant lolo = new EtudiantBuilder()
                 .ajouterNom("Dupont")
                 .ajouterPrenom("Philippe")
