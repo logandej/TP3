@@ -52,7 +52,7 @@ https://classroom.github.com/a/IOu1E57Y
  
     class GestionEtudiants {
         public static void main(String[] args) {
-            LocalDate maDate = LocalDate.of(2019, Month.FEBRUARY, 4);
+            LocalDate maDate = LocalDate.of(2021, Month.FEBRUARY, 1);
         }
     }
     ```
@@ -80,7 +80,7 @@ https://classroom.github.com/a/IOu1E57Y
 
 1. Créez une nouvelle variable `toto` de type `Etudiant` construite avec exactement les mêmes paramètres que `lolo`. Comparez les deux variables avec l'opérateur `==`. Que constatez-vous ?
 
-1. Modifiez votre programme pour faire en sorte que `toto` fasse référence à `lolo`. Vérifiez qu'une modification des attributs de `toto` se répercute bien sur `lolo`.
+1. Modifiez votre programme pour faire en sorte que `toto` fasse référence à `lolo`. En invoquant la méthode `setNom(...)` sur l'objet `toto`, vérifiez que la modification se répercute bien sur `lolo`.
 
 1. Créez une classe `Departement` qui aura comme attributs une spécialité, une adresse et un tableau d'étudiants inscrits géré sous forme de liste. Pour déclarer une telle liste vous pouvez utiliser la classe `ArrayList` du package `java.util` (voir un exemple dans le cours). Munissez la classe d'un constructeur, qui prend comme paramètre un intitulé et une adresse. Définissez la méthode `toString()` dans `Departement` avec un texte qui liste l'ensemble des étudiants du département.
 
@@ -100,9 +100,7 @@ Pour ce faire : clic droit sur le nom de la classe &rightarrow; _Refactor_ &righ
 
 On souhaite étoffer le modèle objet conçu auparavant en y incluant les aspects pédagogiques du département. Pour cela on vous demande de gérer les *matières*, les *enseignants* et les *notes*. 
 
-1. Une `Matiere` est définie par un intitulé, un coefficient (une valeur réelle qui pourra servir pour le calcul d'une moyenne)
-et un `Professeur` responsable (une classe avec des attributs nom et prénom). Créez la classe correspondante
-avec un constructeur adéquat. Ajoutez dans `Matiere` une méthode accesseur `getCoefficient()` qui retourne le coefficient.
+1. Une `Matiere` est définie par un intitulé, un coefficient (une valeur réelle qui pourra servir pour le calcul d'une moyenne). Ajoutez dans `Matiere` une méthode accesseur `getCoefficient()` qui retourne le coefficient.
 
 1. Une `Note` est définie par une matière et par un nombre réel (qui représente la valeur de la note). Déclarez la classe correspondante et ajoutez des méthodes accesseurs pour chacun des attributs.
 
@@ -131,7 +129,7 @@ de calculer la moyenne pondérée des notes de l'étudiant. Pensez à ajouter de
 
 5. Vérifiez que votre programme fonctionne bien en l'exécutant depuis la classe principale.
 
-6. Construisez le diagramme de classes correspondant au programme *Java* que vous avez écrit. Vous pouvez le faire sur papier ou en utilisant un logiciel de modélisation.
+6. **Bonus** : construisez le diagramme de classes correspondant au programme *Java* que vous avez écrit. Vous pouvez le faire sur papier ou en utilisant un logiciel de modélisation.
 
 ### Exercice 3 (Bonus)
 
