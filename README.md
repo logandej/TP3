@@ -63,7 +63,7 @@ https://classroom.github.com/a/IOu1E57Y
     
     **Astuce :** L'IDE peut générer automatiquement le code des méthodes usuelles pour une classe. Ainsi, après avoir déclaré les attributs de votre classe, faites un clic droit dans le code de la classe et sélectionnez «*Generate...*» (ou <kbd>Alt</kbd>+<kbd>Insert</kbd>) puis choisissez «*Constructor*». Sélectionnez les attributs que vous souhaitez passer directement en argument au constructeur (ici tous) et validez. Vous pouvez évidemment modifier par la suite le constructeur ainsi généré.
 
-1. Créez la méthode `toString()` (qui renvoie un objet de type `String`) générant un texte de présentation des  informations concernant l'objet `Etudiant`.
+1. Créez la méthode `toString()` (qui renvoie un objet de type `String`) générant un texte de présentation des informations concernant l'objet `Etudiant`.
 
     **Attention :** cette méthode n’affiche rien, elle se contente de produire une chaîne de caractères. Ce à quoi sert ce texte (par ex. à être affiché à l’écran, ou être écrit dans un fichier) dépend de l’utilisation de la méthode.
 
@@ -80,7 +80,7 @@ https://classroom.github.com/a/IOu1E57Y
 
 1. Créez une nouvelle variable `toto` de type `Etudiant` construite avec exactement les mêmes paramètres que `lolo`. Comparez les deux variables avec l'opérateur `==`. Que constatez-vous ?
 
-1. Modifiez votre programme pour faire en sorte que `toto` fasse référence à `lolo`. En invoquant la méthode `setNom(...)` sur l'objet `toto`, vérifiez que la modification se répercute bien sur `lolo`.
+1. On se rend compte qu'en fait, `toto` est juste un surnom de `lolo`. Modifiez votre programme pour faire en sorte que `toto` fasse référence à `lolo`. En invoquant la méthode `setNom(...)` sur l'objet `toto`, vérifiez que la modification se répercute bien sur `lolo`.
 
 1. Créez une classe `Departement` qui aura comme attributs une spécialité, une adresse et un tableau d'étudiants inscrits géré sous forme de liste. Pour déclarer une telle liste vous pouvez utiliser la classe `ArrayList` du package `java.util` (voir un exemple dans le cours). Munissez la classe d'un constructeur, qui prend comme paramètre un intitulé et une adresse. Définissez la méthode `toString()` dans `Departement` avec un texte qui liste l'ensemble des étudiants du département.
 
@@ -136,8 +136,8 @@ de calculer la moyenne pondérée des notes de l'étudiant. Pensez à ajouter de
 Observez que la classe `Etudiant` a un constructeur avec 5 paramètres. Bien entendu, le nombre de paramètres risque
 de croître car beaucoup d'autres attributs sont susceptibles d'être ajoutés à la classe `Etudiant`.
 Observez aussi que lorsqu'on construit une instance d'`Etudiant` il est facile de se tromper dans l'ordre des paramètres
-du constructeur. Heureusement que l'IDE vous aide en vous suggérant cette ordre lorsque vous programmez...
-De plus, les valeurs de certains attributs peuvent être inconnues au moment de la construction de l'objet : l'adresse de l'étudiant n'est pas encore connue car l'attribution des logements universitaires par les organismes correspondants n'a pas encore eu lieu; l'adresse mail étudiante n'est pas encore active au moment de l'inscription de l'étudiant, etc. Plusieurs solutions peuvent être envisagées :
+du constructeur. Heureusement que l'IDE vous aide en vous suggérant cet ordre lorsque vous programmez...
+De plus, les valeurs de certains attributs peuvent être inconnues au moment de la construction de l'objet : l'adresse de l'étudiant n'est pas encore connue car l'attribution des logements universitaires par les organismes correspondants n'a pas encore eu lieu, l'adresse mail n'est pas encore active au moment de l'inscription de l'étudiant, etc. Plusieurs solutions peuvent être envisagées :
 
 1. Une solution est de définir plusieurs constructeurs avec différents paramètres et de les faire collaborer (voir exemples en [cours](http://pageperso.lis-lab.fr/~petru.valicov/Cours/M2103/BPOO_Generalites_x4.pdf)).
 Ainsi, l'utilisateur pourra choisir le constructeur qui lui convient. C’est ce qu’on appelle une *construction télescopique*.
@@ -158,9 +158,9 @@ Ainsi, l'utilisateur pourra choisir le constructeur qui lui convient. C’est ce
         public static void main(String[] args) {
             EtudiantJavaBeans toto = new EtudiantJavaBeans();
             toto.setNom("Dupont");
-            toto.setDateDeNaissance(LocalDate.of(2000, Month.JANUARY, 28));
+            toto.setDateDeNaissance(LocalDate.of(2002, Month.JANUARY, 28));
             /* ... */
-            toto.setAdresse("1, av. des Champs-Elysées, 75008 Paris");
+            toto.setAdresse("99, av. Occitanie, 34000 Montpellier");
         }
     }
     ```
@@ -175,9 +175,9 @@ Ainsi, l'utilisateur pourra choisir le constructeur qui lui convient. C’est ce
             Etudiant lolo = new EtudiantBuilder()
                 .ajouterNom("Dupont")
                 .ajouterPrenom("Philippe")
-                .ajouterDateNaissance(LocalDate.of(2000, Month.JANUARY, 28))
+                .ajouterDateNaissance(LocalDate.of(2002, Month.JANUARY, 28))
                 .ajouterMail("dupont@etu.umontpellier.fr")
-                .ajouterAdresse("1, av. des Champs-Elysées, 75008 Paris")
+                .ajouterAdresse("99, av. Occitanie, 34000 Montpellier")
                 .build();
         }
     }
