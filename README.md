@@ -20,6 +20,7 @@
 * Pour éviter des problèmes durant vos TPs d'informatique, vous devriez toujours **garder 300-400 Mo d'espace libre**.
 -->
 
+
 ## TP 3 : *Java* - références, constructeurs, première application orientée objet
 
 On se propose ici de réaliser une application de gestion des étudiants dans un département informatique d'un IUT. 
@@ -40,6 +41,8 @@ https://classroom.github.com/a/IOu1E57Y
 ### Consignes
 - Sauf indication contraire, **tous** les attributs que vous allez déclarer dans ce TP (et dans les TPs qui suivent) doivent être privés (`private`).
 - A priori, la plupart des méthodes devraient être déclarées publiques (`public`). Vous pouvez tout de même déclarer et utiliser des méthodes `private` du moment qu'elles vous sont utiles et que votre programme fonctionne correctement.
+- Date limite de rendu de votre code sur le dépôt GitHub : **Dimanche 7 février à 23h00**
+
 
 ### Exercice 1
 
