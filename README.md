@@ -87,17 +87,17 @@ https://classroom.github.com/a/IOu1E57Y
 
 1. Créez une classe `Departement` qui aura comme attributs une spécialité, une adresse et un tableau d'étudiants inscrits géré sous forme de liste. Pour déclarer une telle liste vous pouvez utiliser la classe `ArrayList` du package `java.util` (voir un exemple dans le cours). Munissez la classe d'un constructeur, qui prend comme paramètre un intitulé et une adresse. Définissez la méthode `toString()` dans `Departement` avec un texte qui liste l'ensemble des étudiants du département.
 
-    **Indication :** Pensez à utiliser les fonctionnalités de l'IDE pour importer la classe `ArrayList` et pour générer le constructeur et la méthode `toString`.
+    **Indication :** Pensez à utiliser les fonctionnalités de l'IDE pour importer la classe `ArrayList` et pour générer le constructeur et la méthode `toString()`.
 
 1. Ajoutez une méthode `inscrire(...)` dans la classe `Departement` qui prend en paramètre un étudiant et l'ajoute aux étudiants inscrits du département.
 
 1. Ajoutez une méthode `desinscrire(...)` qui supprime un étudiant passé en paramètre de la liste des étudiants inscrits.
 
-1. Vérifiez le bon fonctionnement de votre application dans la classe principale en créant un département `monDepInfo` et en y inscrivant quatre étudiants (dont `toto` et `lolo` définis précédemment). Désinscrivez ensuite `toto` du département. Que constatez-vous ?
+1. Simulez votre application dans la classe principale en créant un département `monDepInfo` et en y inscrivant quatre étudiants (dont `toto` et `lolo` définis précédemment). Désinscrivez ensuite `toto` du département. Que constatez-vous ?
 
 ### Exercice 2
 
-**Rappel :** Pour préserver le code écrit dans l'exercice précédent copiez l'ensemble des classes du package
+**Rappel :** Pour préserver le code écrit dans l'exercice précédent, copiez l'ensemble des classes du package
 `fr.umontpellier.iut.exo1` dans le package `fr.umontpellier.iut.exo2` en utilisant les outils de *refactoring* de l'IDE.
 Pour ce faire : clic droit sur le nom de la classe &rightarrow; _Refactor_ &rightarrow; _Copy_  
 
